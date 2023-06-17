@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <title>Concessionaria Auto</title>
+  <style>
+    /* Custom styles */
+    .hero.is-primary {
+      background-color: #00d1b2;
+      color: #fff;
+    }
+    .hero.is-primary .title {
+      color: #fff;
+    }
+    .hero-body {
+      padding: 3rem 1.5rem;
+    }
+    .section {
+      padding: 3rem 1.5rem;
+    }
+    .title {
+      font-size: 3rem;
+    }
+    .subtitle {
+      font-size: 1.5rem;
+    }
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+    .map-container {
+      position: relative;
+      padding-bottom: 50%; /* Adjust this value to control the map's aspect ratio */
+      overflow: hidden;
+    }
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .sales {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .sales-caption {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero section -->
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Canderle Concessionaria Auto
+        </h1>
+        <h2 class="subtitle">
+          Trova la tua auto dei sogni oggi stesso
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features section -->
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h3 class="title is-4">Vasta Selezione</h3>
+          <p>Esplora il nostro vasto assortimento di auto nuove e usate dei migliori marchi.</p>
+        </div>
+        <div class="column">
+          <h3 class="title is-4">Prezzi Competitivi</h3>
+          <p>Ottieni le migliori offerte e prezzi competitivi su tutte le nostre auto.</p>
+        </div>
+        <div class="column">
+          <h3 class="title is-4">Consulenza Esperta</h3>
+          <p>Il nostro personale esperto è pronto ad aiutarti a trovare l'auto perfetta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h2 class="title">Contattaci</h2>
+          <p class="subtitle">Per ulteriori informazioni o per prenotare un test drive, contattaci oggi stesso.</p>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.046327034388!2d11.546090615546733!3d45.57059003419764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eaed53dc1ddcd%3A0x2a8d186f8903d307!2sVia%20Ponteselo%2C%208%2C%2036010%20Isola%20Vicentina%20VI%2C%20Italy!5e0!3m2!1sen!2sus!4v1623714946235!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <br>
+          <p class="subtitle">Vieni a trovarci:</p>
+          <p>Via Ponteselo 8, Isola Vicentina, Vicenza, Italia</p>
+          <br>
+          <p class="subtitle">Contattaci al:</p>
+          <p>Telefono: <a href="tel:3408784751">3408784751</a></p>
+        </div>
+        <div class="column">
+          <h2 class="title">Invia un Email</h2>
+          <form action="invia_email.php" method="POST"></form>
+            <div class="field">
+              <label class="label">Nome</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Il tuo nome" name="name" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input" type="email" placeholder="La tua email" name="email" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Messaggio</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Il tuo messaggio" name="message" required></textarea>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <button class="button is-primary" type="submit">Invia Email</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sales section -->
+  <section class="section sales">
+    <div class="container">
+      <h2 class="title">Alcune delle nostre recenti vendite</h2>
+      <div class="columns">
+        <div class="column">
+          <figure class="image">
+            <img src="image1.jpg" alt="Auto 1">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="image2.jpg" alt="Auto 2">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="image3.jpg" alt="Auto 3">
+          </figure>
+        </div>
+      </div>
+      <p class="sales-caption">Scopri le auto incredibili che abbiamo venduto di recente.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2023 Canderle Filippo. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+</body>
+</html>
